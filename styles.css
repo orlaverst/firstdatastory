@@ -1,0 +1,184 @@
+ /* body{
+    margin: 0;
+    margin-left: 4rem;
+    background-color:rgb(255, 247, 235);
+    overflow-x: hidden;
+    overflow-y: hidden; 
+} */
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 200%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color:rgb(255, 247, 235);
+}
+
+
+.image-container {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    transition: left 0.5s ease;
+    z-index: 1; /* Ensure the image is behind the text */
+}
+
+.scroll-image {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2; /* Ensure the text is above the image */
+    padding: 20px;
+    transition: position 0.5s ease;
+}
+
+.content p {
+    transition: color 0.5s ease;
+    color: #FF7B19; /* Initial text color */
+}
+.content.black-text p {
+    color: #049c83; /* Text color when on the image */
+}
+
+.content h1 {
+    transition: color 0.5s ease;
+    color: #FF7B19; /* Initial text color */
+}
+.content.black-text h1 {
+    color: #049c83; /* Text color when on the image */
+}
+
+h1{
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 80px;
+    width: 600px;
+    /* color: #FF7B19; */
+    margin-bottom: 10px;
+    margin-top: 11rem;
+    margin-left: 4rem;
+}
+
+.subtitle{
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* color: #FF7B19;  */
+    font-size: 16px;
+    margin-bottom: 40px;
+    margin-left: 4rem;
+}
+
+.author{
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+    /* color: #FF7B19; */
+    font-size: 12px;
+    margin-left: 4rem;
+} 
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.intro-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-left: 5rem;
+}
+
+.intro{
+    margin-top: 24rem;
+   
+    width: 45rem;
+
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.introimage{
+    margin-top: 17rem;
+    margin-left: 8rem;
+    float: right;
+}
+
+.mapbox_centers {
+    margin-top: 15rem;
+
+}
+
+
+.africa{
+    margin-top: 10rem;
+    margin-left: 5rem;
+    margin-bottom: 10rem;
+    background-color: #049c83;
+    width: 22rem;
+
+
+}
+
+h3{
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding-top: 1rem;
+    margin-left: 1rem;
+    color: rgb(255, 247, 235);
+}
+
+.africa p{
+    width: 20rem;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    color: rgb(255, 247, 235);
+}
+
+
+.mapbox_owners{
+    margin-top: 15rem;
+}
+
+.conclusion{
+    margin-top: 10rem;
+    margin-left: 5rem;
+    margin-bottom: 10rem;
+   
+    width: 45rem;
+
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+
+
